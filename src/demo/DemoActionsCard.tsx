@@ -53,6 +53,10 @@ const cardTemplate = {
             "wrap": true
         },
         {
+            "type": "Input.Date",
+            "id": "dataText"
+        },
+        {
             "type": "FactSet",
             "facts": [
                 {
@@ -84,7 +88,10 @@ const cardTemplate = {
                 "actions": [
                     {
                         "type": "Action.Submit",
-                        "title": "OK"
+                        "title": "OK",
+                        "data": {
+                            "type": "FirstForm"
+                        }
                     }
                 ],
                 "$schema": "http://adaptivecards.io/schemas/adaptive-card.json"
@@ -107,8 +114,11 @@ const cardTemplate = {
             "title": "Action.ToggleVisibility"
         },
         {
-            "type": "Action.Execute",
-            "title": "Action.Execute"
+            "type": "Action.Submit",
+            "title": "Action.Submit",
+            "data": {
+                "cognigi": "1312"
+            }
         }
     ],
     "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
