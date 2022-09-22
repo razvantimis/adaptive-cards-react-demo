@@ -1,4 +1,4 @@
-# Demo Micrasoft Adaptive cards
+# Demo Microsoft Adaptive cards
 
 I created some examples with adaptive cards integrated in react app.
 
